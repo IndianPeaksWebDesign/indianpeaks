@@ -10,16 +10,27 @@ body {
 	background-image:url(IMG_1127x.jpg);
 }
 
-#li > a {
+li {
+    list-style: outside none none;
+}
+
+li a {
     font-style: normal;
     font-weight: 400;
     text-transform: uppercase;
-	color: #47A2DE;
+	text-decoration:none;
 }
 
-#li > a:hover {
+li a:hover {
     color: #566471;
     background-color: transparent;
+}
+
+li a span {
+    display: inline-block;
+    border: 1px solid #ffffff;
+    padding: 0.875em 1.25em 0.825em;
+    border-radius: 100em;
 }
 </style>
 
@@ -27,30 +38,15 @@ body {
 <body style="text-align:center;">
 <h1>Indian Peaks Web Design</h1>
 
-<p style="color:white;font-size:24px;">Climb the mountains and get their good tidings. - John Muir</p>
-<input type="button" onclick="homePage()" value="Home" /><br /><br />
-<input type="button" onclick="portfolioPage()" value="Portfolio" /><br /><br />
-<input type="button" onclick="codersPage()" value="Coder's Corner" /><br /><br />
-<input type="button" onclick="contactPage()" value="Contact Us" />
+<p style="color:white;font-size:24px;padding-top:15px;">Climb the mountains and get their good tidings. - John Muir</p>
 
+<ul>
+<li><a href="http://www.indianpeakswebdesign.com">Home</a></li>
+<li><a href="http://www.indianpeakswebdesign.com/portfolio">Portfolio</a></li>
+<li><a href="http://www.indianpeakswebdesign.com/programming">Coder's Corner</a></li>
+<li><a href="http://www.indianpeakswebdesign.com/contact">Contact Us</a></li>
+</ul>
 
-<script type="text/javascript">
-function homePage() {
-	location.href="http://www.indianpeakswebdesign.com";
-}
-
-function portfolioPage() {
-	location.href="http://www.indianpeakswebdesign.com/portfolio/";
-}
-
-function codersPage() {
-	location.href="http://www.indianpeakswebdesign.com/programming/";
-}
-
-function contactPage() {
-	location.href="http://www.indianpeakswebdesign.com/contact/";
-}
-</script>
 
 </body>
 </html>
