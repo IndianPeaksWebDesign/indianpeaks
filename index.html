@@ -10,20 +10,31 @@ body {
 	background-image:url(IMG_1127x.jpg);
 }
 
+h1 {
+	font-size:36px;	
+}
+
 li {
     list-style: outside none none;
+	line-height: 0.85;
+
 }
 
 li a {
+	font-size:24px;
     font-style: normal;
     font-weight: 400;
     text-transform: uppercase;
 	text-decoration:none;
+	color: #47A2DE;
+	outline:none;
+	height: 40px;
+	
 }
 
 li a:hover {
-    color: #566471;
-    background-color: transparent;
+    color: #737373;
+    
 }
 
 li a span {
@@ -31,6 +42,9 @@ li a span {
     border: 1px solid #ffffff;
     padding: 0.875em 1.25em 0.825em;
     border-radius: 100em;
+	margin: 10px 10px;
+	background-color: #ffffff;
+	width:250px;
 }
 </style>
 
@@ -40,13 +54,33 @@ li a span {
 
 <p style="color:white;font-size:24px;padding-top:15px;">Climb the mountains and get their good tidings. - John Muir</p>
 
-<ul>
-<li><a href="http://www.indianpeakswebdesign.com">Home</a></li>
-<li><a href="http://www.indianpeakswebdesign.com/portfolio">Portfolio</a></li>
-<li><a href="http://www.indianpeakswebdesign.com/programming">Coder's Corner</a></li>
-<li><a href="http://www.indianpeakswebdesign.com/contact">Contact Us</a></li>
-</ul>
+<nav class="x-nav-wrap desktop" role="navigation">
 
+    <ul id="menu-main-navigation" class="x-nav x-nav-scrollspy">
+
+        <li id="menu-item-47" class="menu-item menu-item-type-post_type menu-item-object-page cur…u-item page_item page-item-13 current_page_item menu-item-47">
+            <a href="http://www.indianpeakswebdesign.com">
+                <span>Home</span>
+            </a>
+        </li>
+        <li id="menu-item-46" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-46">
+            <a href="http://www.indianpeakswebdesign.com/portfolio/">
+                <span>Portfolio</span>
+            </a>
+        </li>
+        <li id="menu-item-356" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-356">
+            <a href="http://www.indianpeakswebdesign.com/programming/">
+	            <span>Coder's Corner</span>
+            </a>
+        </li>
+        <li id="menu-item-183" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-183">
+        	<a href="http://www.indianpeakswebdesign.com/contact/">
+	            <span>Contact Us</span>
+            </a>
+        </li>
+    </ul>
+
+</nav>
 
 </body>
 </html>
